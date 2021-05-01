@@ -13,7 +13,7 @@ A Simple Web Browser in C#
   <tr>
     <td>1</td>
     <td>Sending HTTP request messages for URLs typed by user</td>
-    <td>✓</td>
+    <td style="color: green">✓</td>
   </tr>
   <tr>
     <td>2</td>
@@ -132,12 +132,12 @@ A Simple Web Browser in C#
   </tr>
    <tr>
     <td>25</td>
-    <td>Shortcut keys for quicker access to different actions</td>
+    <td>Buttons for different actions to increase accessibility</td>
     <td>✓</td>
   </tr>
    <tr>
     <td>26</td>
-    <td>Buttons for different actions to increase accessibility</td>
+    <td>Shortcut keys for quicker access to different actions</td>
     <td>✓</td>
   </tr>
 </table>
