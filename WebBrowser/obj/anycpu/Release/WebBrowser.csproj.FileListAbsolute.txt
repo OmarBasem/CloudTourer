@@ -1,0 +1,11 @@
+/Users/omar/Desktop/IndustrialProgramming/CW1-5/WebBrowser/WebBrowser/bin/Release/WebBrowser.exe
+/Users/omar/Desktop/IndustrialProgramming/CW1-5/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.csproj.CoreCompileInputs.cache
+/Users/omar/Desktop/IndustrialProgramming/CW1-5/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.exe
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.csprojAssemblyReference.cache
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.csproj.CoreCompileInputs.cache
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/bin/Release/WebBrowser.exe
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/bin/Release/nunit.framework.dll
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/bin/Release/nunit.framework.pdb
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/bin/Release/nunit.framework.xml
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.csproj.CopyComplete
+/Users/omar/Desktop/IndustrialProgramming/CW1/WebBrowser/WebBrowser/obj/anycpu/Release/WebBrowser.exe

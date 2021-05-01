@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{CAB05535-5606-46E2-A5CC-DB470A2D9C13}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
+    <Files>
+      <File FileName="WebBrowser/MainWindow.cs" Line="16" Column="49" />
+      <File FileName=".gitignore" Line="1" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebBrowser" expanded="True">
+            <Node name="WebBrowser" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/omar/Library/Caches/VisualStudio/8.0/Symbols/mono/mono/5d03a6fe116b6ab1570ba2c67933813ede00a0d4</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebBrowser PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

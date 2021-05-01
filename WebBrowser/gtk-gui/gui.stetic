@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/WebBrowser.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="547 374">
+    <action-group name="Default">
+      <action id="FileAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="EditAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit</property>
+        <property name="ShortLabel" translatable="yes">Edit</property>
+      </action>
+      <action id="ViewAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View</property>
+        <property name="ShortLabel" translatable="yes">View</property>
+      </action>
+      <action id="BookmarksAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Bookmarks</property>
+        <property name="ShortLabel" translatable="yes">Bookmarks</property>
+      </action>
+      <action id="MainWindowAddMyLabelAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">            mainWindow.Add(myLabel)</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+      </action>
+      <action id="NewTabAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">New Tab</property>
+        <property name="ShortLabel" translatable="yes">New Tab</property>
+      </action>
+      <action id="PrintAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Print</property>
+        <property name="ShortLabel" translatable="yes">Print</property>
+      </action>
+      <action id="OpenFileAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Open File..</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+      </action>
+      <action id="FileAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="EditAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit</property>
+        <property name="ShortLabel" translatable="yes">Edit</property>
+      </action>
+      <action id="ViewAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View</property>
+        <property name="ShortLabel" translatable="yes">View</property>
+      </action>
+      <action id="FavouritesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Favourites</property>
+        <property name="ShortLabel" translatable="yes">Bookmarks</property>
+        <signal name="Activated" handler="onFavsActive" />
+      </action>
+      <action id="OpenFileAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Open File..</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+      </action>
+      <action id="HomePageAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Home Page</property>
+        <property name="ShortLabel" translatable="yes">Home Page</property>
+      </action>
+      <action id="PrintAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Print</property>
+        <property name="ShortLabel" translatable="yes">Print</property>
+      </action>
+      <action id="BackAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Back</property>
+        <property name="ShortLabel" translatable="yes">Back</property>
+      </action>
+      <action id="ForwardAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Forward</property>
+        <property name="ShortLabel" translatable="yes">Forward</property>
+      </action>
+      <action id="FullHistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Full History</property>
+        <property name="ShortLabel" translatable="yes">Full History</property>
+      </action>
+      <action id="HistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">History</property>
+        <property name="ShortLabel" translatable="yes">History</property>
+      </action>
+      <action id="HomePageAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Home Page</property>
+        <property name="ShortLabel" translatable="yes">Home Page</property>
+        <signal name="Activated" handler=" goToHomePage" />
+      </action>
+      <action id="BackAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Back</property>
+        <property name="ShortLabel" translatable="yes">Back</property>
+        <signal name="Activated" handler="onClickBackButton" />
+      </action>
+      <action id="ForwardAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Forward</property>
+        <property name="ShortLabel" translatable="yes">Forward</property>
+        <signal name="Activated" handler="onClickForwardButton" />
+      </action>
+      <action id="ViewHistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View History</property>
+        <property name="ShortLabel" translatable="yes">Full History</property>
+        <signal name="Activated" handler="onClickFullHistory" />
+      </action>
+      <action id="Action">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+      </action>
+      <action id="addToFavsLabel">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Add to Favourites</property>
+        <property name="ShortLabel" translatable="yes">Add to Favourites</property>
+        <property name="StockId">gtk-about</property>
+        <signal name="Activated" handler="onClickFav" />
+      </action>
+      <action id="ViewAllFavouritesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View All Favourites</property>
+        <property name="ShortLabel" translatable="yes">View All Favourites</property>
+        <signal name="Activated" handler="onClickAllFavs" />
+      </action>
+      <action id="HomeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Home</property>
+        <property name="ShortLabel" translatable="yes">Home</property>
+      </action>
+      <action id="SetAsHomePageAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Set As Home Page</property>
+        <property name="ShortLabel" translatable="yes">Set As Home Page</property>
+        <signal name="Activated" handler="setHomePage" />
+      </action>
+      <action id="NewWindowAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">New Window</property>
+        <property name="ShortLabel" translatable="yes">New Window</property>
+      </action>
+      <action id="NewTabAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">New Tab</property>
+        <property name="ShortLabel" translatable="yes">New Tab</property>
+      </action>
+      <action id="ShareAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Share</property>
+        <property name="ShortLabel" translatable="yes">Share</property>
+      </action>
+      <action id="UndoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Undo</property>
+        <property name="ShortLabel" translatable="yes">Undo</property>
+      </action>
+      <action id="RedoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Redo</property>
+        <property name="ShortLabel" translatable="yes">Redo</property>
+      </action>
+      <action id="CutAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Cut</property>
+        <property name="ShortLabel" translatable="yes">Cut</property>
+      </action>
+      <action id="CopyAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Copy</property>
+        <property name="ShortLabel" translatable="yes">Copy</property>
+      </action>
+      <action id="PasteAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Paste</property>
+        <property name="ShortLabel" translatable="yes">Paste</property>
+      </action>
+      <action id="ZoomInAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Zoom In</property>
+        <property name="ShortLabel" translatable="yes">Zoom In</property>
+      </action>
+      <action id="ZoomOutAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Zoom Out</property>
+        <property name="ShortLabel" translatable="yes">Zoom Out</property>
+      </action>
+      <action id="EditHomePageURLAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit Home Page URL</property>
+        <property name="ShortLabel" translatable="yes">Edit Home Page URL</property>
+        <signal name="Activated" handler="onClickEditHome" />
+      </action>
+      <action id="ClearHistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Clear History</property>
+        <property name="ShortLabel" translatable="yes">Clear History</property>
+        <signal name="Activated" handler="onClickClearHistory" />
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <signal name="KeyPressEvent" handler="onKeyPress" />
+    <child>
+      <widget class="Gtk.VBox" id="vBox">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menuBar">
+            <property name="MemberName" />
+            <node name="menuBar" type="Menubar">
+              <node type="Menu" action="FileAction1">
+                <node type="Menuitem" action="NewWindowAction" />
+                <node type="Menuitem" action="NewTabAction1" />
+                <node type="Menuitem" action="OpenFileAction1" />
+                <node type="Menuitem" action="PrintAction1" />
+                <node type="Menuitem" action="ShareAction" />
+              </node>
+              <node type="Menu" action="EditAction1">
+                <node type="Menuitem" action="UndoAction" />
+                <node type="Menuitem" action="RedoAction" />
+                <node type="Menuitem" action="CutAction" />
+                <node type="Menuitem" action="CopyAction" />
+                <node type="Menuitem" action="PasteAction" />
+              </node>
+              <node type="Menu" action="ViewAction1">
+                <node type="Menuitem" action="ZoomInAction" />
+                <node type="Menuitem" action="ZoomOutAction" />
+              </node>
+              <node type="Menu" action="FavouritesAction">
+                <node type="Menuitem" action="addToFavsLabel" />
+                <node type="Menuitem" action="ViewAllFavouritesAction" />
+              </node>
+              <node type="Menu" action="HistoryAction">
+                <node type="Menuitem" action="BackAction1" />
+                <node type="Menuitem" action="ForwardAction1" />
+                <node type="Menuitem" action="ViewHistoryAction" />
+                <node type="Menuitem" action="ClearHistoryAction" />
+              </node>
+              <node type="Menu" action="HomeAction">
+                <node type="Menuitem" action="HomePageAction1" />
+                <node type="Menuitem" action="SetAsHomePageAction" />
+                <node type="Menuitem" action="EditHomePageURLAction" />
+              </node>
+              <node type="Menu" action="Action" />
+            </node>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox14">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <property name="BorderWidth">3</property>
+            <child>
+              <widget class="Gtk.Label" id="title">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Page Title</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox4">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.HBox" id="hbox6">
+                    <property name="MemberName" />
+                    <property name="Spacing">6</property>
+                    <child>
+                      <widget class="Gtk.Button" id="backButton">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Back</property>
+                        <property name="UseUnderline">True</property>
+                        <signal name="Clicked" handler="onClickBackButton" />
+                      </widget>
+                      <packing>
+                        <property name="Position">0</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Button" id="button7">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Forward</property>
+                        <property name="UseUnderline">True</property>
+                        <signal name="Clicked" handler="onClickForwardButton" />
+                      </widget>
+                      <packing>
+                        <property name="Position">1</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Button" id="Refresh">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Refresh</property>
+                        <property name="UseUnderline">True</property>
+                        <signal name="Clicked" handler="onClickRefresh" />
+                      </widget>
+                      <packing>
+                        <property name="Position">2</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="urlInput">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">●</property>
+                    <signal name="Activated" handler="onUrlEnter" after="yes" />
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">statusCode</property>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolledwindow1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.Viewport" id="GtkViewport">
+                <property name="MemberName" />
+                <property name="ShadowType">None</property>
+                <child>
+                  <widget class="Gtk.Label" id="label11">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label11</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="mainWindow" design-size="530 374">
+    <action-group name="Default">
+      <action id="FileAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="EditAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit</property>
+        <property name="ShortLabel" translatable="yes">Edit</property>
+      </action>
+      <action id="ViewAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View</property>
+        <property name="ShortLabel" translatable="yes">View</property>
+      </action>
+      <action id="HistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">History</property>
+        <property name="ShortLabel" translatable="yes">History</property>
+      </action>
+      <action id="BookmarksAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Bookmarks</property>
+        <property name="ShortLabel" translatable="yes">Bookmarks</property>
+      </action>
+      <action id="MainWindowAddMyLabelAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">            mainWindow.Add(myLabel)</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+      </action>
+      <action id="NewTabAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">New Tab</property>
+        <property name="ShortLabel" translatable="yes">New Tab</property>
+      </action>
+      <action id="PrintAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Print</property>
+        <property name="ShortLabel" translatable="yes">Print</property>
+      </action>
+      <action id="OpenFileAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Open File..</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+      </action>
+      <action id="FileAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="EditAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit</property>
+        <property name="ShortLabel" translatable="yes">Edit</property>
+      </action>
+      <action id="ViewAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View</property>
+        <property name="ShortLabel" translatable="yes">View</property>
+      </action>
+      <action id="HistoryAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">History</property>
+        <property name="ShortLabel" translatable="yes">History</property>
+      </action>
+      <action id="BookmarksAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Bookmarks</property>
+        <property name="ShortLabel" translatable="yes">Bookmarks</property>
+      </action>
+      <action id="OpenFileAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Open File..</property>
+        <property name="ShortLabel" translatable="yes">Open File..</property>
+        <signal name="Activated" handler="onOpenFileClick" />
+      </action>
+      <action id="HomePageAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Home Page</property>
+        <property name="ShortLabel" translatable="yes">Home Page</property>
+      </action>
+      <action id="ViewFullHistoryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View Full History</property>
+        <property name="ShortLabel" translatable="yes">View Full History</property>
+        <signal name="Activated" handler="onClickHistory" />
+      </action>
+      <action id="BackAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Back</property>
+        <property name="ShortLabel" translatable="yes">Back</property>
+      </action>
+      <action id="ForwardAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Forward</property>
+        <property name="ShortLabel" translatable="yes">Forward</property>
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vBox">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menuBar">
+            <property name="MemberName" />
+            <node name="menuBar" type="Menubar">
+              <node type="Menu" action="EditAction1" />
+              <node type="Menu" action="ViewAction1" />
+              <node type="Menu" action="FileAction1">
+                <node type="Menuitem" action="OpenFileAction1" />
+              </node>
+              <node type="Menu" action="HistoryAction1">
+                <node type="Menuitem" action="HomePageAction" />
+                <node type="Menuitem" action="BackAction" />
+                <node type="Menuitem" action="ForwardAction" />
+                <node type="Menuitem" action="ViewFullHistoryAction" />
+              </node>
+              <node type="Menu" action="BookmarksAction1" />
+            </node>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.VBox" id="vbox14">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <property name="BorderWidth">3</property>
+            <child>
+              <widget class="Gtk.Label" id="title">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Home Page</property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.HBox" id="hbox4">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.HBox" id="hbox6">
+                    <property name="MemberName" />
+                    <property name="Spacing">6</property>
+                    <child>
+                      <widget class="Gtk.Button" id="button5">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Back</property>
+                        <property name="UseUnderline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">0</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Button" id="button7">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Forward</property>
+                        <property name="UseUnderline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">1</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Button" id="Refresh">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">Refresh</property>
+                        <property name="UseUnderline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">2</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="urlInput">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">●</property>
+                    <signal name="Activated" handler="onUrlEnter" after="yes" />
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="scrolledwindow1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.Viewport" id="GtkViewport">
+                <property name="MemberName" />
+                <property name="ShadowType">None</property>
+                <child>
+                  <widget class="Gtk.Label" id="label11">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label11</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
