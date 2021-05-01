@@ -13,7 +13,7 @@ A Simple Web Browser in C#
   <tr>
     <td>1</td>
     <td>Sending HTTP request messages for URLs typed by user</td>
-    <td style="color: green">✓</td>
+    <td color="green">✓</td>
   </tr>
   <tr>
     <td>2</td>
